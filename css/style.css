@@ -144,6 +144,7 @@ margin-bottom: 30px;
 .promo{
     padding-top: 50px;
     padding-bottom: 50px;
+    justify-content: space-between;
 }
 .card{
     position: relative;
@@ -155,6 +156,7 @@ margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 49%;
 }
 .card::before{
     z-index: -1;
