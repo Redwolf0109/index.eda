@@ -91,7 +91,7 @@ background: #F66A15;
     color: white;
 }
 .slide-content{
-    max-width: 400px ;
+    max-width: 500px ;
     position: relative;
 }
 .slide-title{
@@ -130,6 +130,17 @@ margin-bottom: 30px;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.slide-autumn{
+    background-image: url('../img/autumn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-winter{
+    background-image: url('../img/winter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .slide::before{
     content:'' ;
     position: absolute;
@@ -208,6 +219,22 @@ margin-bottom: 8px;
     width: 100%;
     height: 100%;
     z-index: -2;
+}
+.slider-buttons{
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+.slider-button{
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
 }
 .section-title{
     font-weight: 500;
@@ -380,6 +407,9 @@ font-weight: 500;
     width: 315px;
     
 }
+.benefits-grey-category{
+    justify-content: center;
+}
 .benefits-content{
     display: flex;
     flex-wrap: wrap;
@@ -441,3 +471,43 @@ line-height: 23px;
     margin-left: 20px;
     text-decoration: none;
 }
+@media(max-wiidth: 1260px){
+    .container{
+        max-width: 960px;
+    }
+
+.seach-form{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.tabs-content{
+    flex-wrap: wrap;
+}
+.tabs-card{
+    flex: 50%;
+    max-width: calc(50%-30px);
+}
+}
+@madia(max-width:992px;){
+    .container{
+        max-width 760px;   }
+        .slide{
+            padding: 70px;
+        }
+        .delivery-card{
+            width: calc(50%-30px);
+        }
+        .footer-logo{
+            margin-right 40px;
+        }
+  
+
+}
+@madia(max-width:768px;)
+    .container{
+        max-width:560px;
+    }
+    .header{
+        flex-wrap:wrap;
+    }
+   
